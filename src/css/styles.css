@@ -5,4 +5,108 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./styles.css');
 
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+      justify-content: space-around;
+  gap: 25px;
+  padding: 0;
+      margin-left: auto;
+        margin-right: auto;
+  list-style: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 250ms ease-in-out;
+}
+.gallery-item {
+  width: calc((100% - 48px)/3);
+  height: 200px;
+}
+
+.feedback-form {
+font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 24px;
+  border: 1px solid #808080;
+  width: 360px;
+}
+input {
+ border: 1px solid #808080;
+  border-radius: 4px;
+ width: 356px;
+ height: 40px;
+ font-weight: 400;
+ margin-bottom: 8px;
+ font-size: 16px;
+ font: inherit;
+ }
+textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 356px;
+  height: 80px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font: inherit;
+}
+        
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  font-weight: 500;
+  background-color: #4e75ff;
+  border: none;
+  font-size: 16px;
+  font: inherit;
+  color: #fff
+}
+        
+label {
+  font-weight: 400;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+        
+        
+}
+        
+        
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  border: 1px solid #000;
+}
+        
+input:active,
+textarea:active {
+  border: 1px solid #808080;
+}
+        
+button:hover {
+  background: #6c8cff;
+}
