@@ -26,7 +26,6 @@ function handlerSubmit(event) {
   } else {
     alert('Fill both fields!');
   }
-    console.log(data);
     data = {};
 
 }
